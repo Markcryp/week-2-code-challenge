@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: lightgray;
+}
+.container{
+    position: relative;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.container .box{
+    position: relative;
+    width: 400px;
+    background: white;
+    padding: 20px;
+}
+.container .box h2{
+    text-align: center;
+    margin-bottom: 12px;
+    width: 100%;
+}
+.container .box #grocery input{
+    position: relative;
+    width: 100%;
+    padding: 10px;
+}
+.container .box #grocery button{
+    background: green;
+    color: white;
+    min-width: 100px;
+    cursor: pointer;
+    outline: none;
+}
+.container ol{
+    position: relative;
+    padding: 10px 20px 10px 40px;;
+    width: 400px;
+    min-height: 400px;
+    background: white repeating-linear-gradient(transparent 0%, transparent 99%, black 99%, black 100%);
+    background-size: 50px 50px;
+}
+.container ol li{
+    position: relative;
+    font-size: 1.5em;
+    height: 50px;
+}
+.container ol li .remove
+{
+    position: absolute;
+    top: 5px;
+    right: 0;
+    width: 25px;
+    height: 25px;
+    background: blue;
+    border-radius: 50%;
+}
